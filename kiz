@@ -61,7 +61,7 @@ local AE = Y.Button({
     Callback = function()
                     local args = {
                         [1] = {
-                            [game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+                            [game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)]
                         },
 
 getgenv().TextField = Y.TextField({
