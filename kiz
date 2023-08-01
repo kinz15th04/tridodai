@@ -1,7 +1,7 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-    Title = "AFS - tobias020108back.",
+    Title = "AFS - kinznosad.",
     Style = 3,
     SizeX = 500,
     SizeY = 350,
@@ -54,14 +54,6 @@ local D = Y.Dropdown({
         "Start Dataloss",
         "Undo Dataloss"
     }
-})
-
-local AE = Y.Button({
-    Text = "https://discord.gg/EvTCW7CXSK",
-    Callback = function()
-       getgenv().Type = Value 
-       game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end
 })
 
 getgenv().TextField = Y.TextField({
