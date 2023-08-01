@@ -43,7 +43,7 @@ local A = Y.Button({
             end
         end
     end
-}) 
+})
 
 local D = Y.Dropdown({
     Text = "Dataloss Type",
@@ -57,17 +57,19 @@ local D = Y.Dropdown({
 })
 
 local AE = Y.Button({
-    Text = "rejoin",
+    Text = "https://discord.gg/EvTCW7CXSK",
     Callback = function()
-                    }
-
-                    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-                    break
-                end
-            end
-        end
+        print("game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)")
     end
-}) 
+})
+
+local AE2 = Y.Button({
+    Text = "Copy Discord Invite",
+    Callback = function()
+        setclipboard("https://discord.gg/EvTCW7CXSK")
+    end
+})
+
 getgenv().TextField = Y.TextField({
     Text = "Status",
     Type = "Default"
