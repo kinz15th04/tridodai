@@ -59,7 +59,8 @@ local D = Y.Dropdown({
 local AE = Y.Button({
     Text = "https://discord.gg/EvTCW7CXSK",
     Callback = function()
-       Click = game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+       getgenv().Type = Value 
+       game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
     end
 })
 
