@@ -43,7 +43,7 @@ local A = Y.Button({
             end
         end
     end
-})
+}) 
 
 local D = Y.Dropdown({
     Text = "Dataloss Type",
@@ -59,11 +59,14 @@ local D = Y.Dropdown({
 local AE = Y.Button({
     Text = "rejoin",
     Callback = function()
-                    local args = {
-                        [1] = {
-                            [game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)]
-                        },
+                    }
 
+                    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+                end
+            end
+        end
+    end
+}) 
 getgenv().TextField = Y.TextField({
     Text = "Status",
     Type = "Default"
