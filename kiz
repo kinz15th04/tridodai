@@ -59,6 +59,9 @@ local D = Y.Dropdown({
 local AE = Y.Button({
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
     end
+       end
+          end
+
 })
 
 getgenv().TextField = Y.TextField({
