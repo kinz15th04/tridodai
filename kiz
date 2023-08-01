@@ -57,12 +57,12 @@ local D = Y.Dropdown({
 })
 
 local AE = Y.Button({
-    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end
-       end
-          end
-
-})
+    Text = "rejoin",
+    Callback = function()
+                    local args = {
+                        [1] = {
+                            [game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+                        },
 
 getgenv().TextField = Y.TextField({
     Text = "Status",
