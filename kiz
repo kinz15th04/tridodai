@@ -62,6 +62,7 @@ local AE = Y.Button({
                     }
 
                     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+                    break
                 end
             end
         end
