@@ -1,7 +1,7 @@
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-    Title = "AFS - kinznosad.",
+    Title = "AFS - tobias020108back.",
     Style = 3,
     SizeX = 500,
     SizeY = 350,
@@ -57,9 +57,17 @@ local D = Y.Dropdown({
 })
 
 local AE = Y.Button({
-  game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-end 
+    Text = "https://discord.gg/EvTCW7CXSK",
+    Callback = function()
+        print("https://discord.gg/EvTCW7CXSK")
+    end
+})
 
+local AE2 = Y.Button({
+    Text = "Copy Discord Invite",
+    Callback = function()
+        setclipboard("https://discord.gg/EvTCW7CXSK")
+    end
 })
 
 getgenv().TextField = Y.TextField({
