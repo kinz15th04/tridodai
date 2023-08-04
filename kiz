@@ -57,7 +57,10 @@ local D = Y.Dropdown({
 })
 
 local AE = Y.Button({
+   Text = "kick",
+    Callback = function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+     end
 })
 
 getgenv().TextField = Y.TextField({
