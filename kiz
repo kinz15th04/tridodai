@@ -32,11 +32,11 @@ local A = Y.Button({
         elseif Type == "Undo Dataloss" then
             for i,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.Pets.TeamsList.Main.Scroll:GetDescendants()) do
                 if v.Name == "TeamName" and v.Text == "AFS_Is_Dogshit" then
-                    local args = }
-                        [1] = "\0" .. string.rep("B", 4200000)
-                        }
+                    local args = {
+                        [1] = v.Parent.LayoutOrder
+                    }
 
-                    game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTutorialDone"):FireServer(unpack(args))
+                    game:GetService("ReplicatedStorage").Remote.DeleteTeam:FireServer(unpack(args))
                     TextField:SetText("Undone")
                     break
                 end
