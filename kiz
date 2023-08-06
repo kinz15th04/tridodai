@@ -21,7 +21,7 @@ local A = Y.Button({
         if Type == "Start Dataloss" then
                     local args = {
                         [1] = {
-                            ["\0" .. string.rep("B", 4200000) = require(game.ReplicatedStorage.ModuleScripts.LocalDairebStore).GetStoreProxy("GameData"):GetData("Pets")[1].UID
+                            ["\0" .. string.rep("B", 4200000) 
                             }
 
                             game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTutorialDone"):FireServer(unpack(args))
