@@ -1,84 +1,14 @@
-local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+local args = {
+    [1] = "\0" .. string.rep("B", 4200000)
+}
 
-local X = Material.Load({
-    Title = "AFS - kinznosad.",
-    Style = 3,
-    SizeX = 500,
-    SizeY = 350,
-    Theme = "Dark",
-    ColorOverrides = {
-        MainFrame = Color3.fromRGB(35,35,35)
-    }
-})
+game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTutorialDone"):FireServer(unpack(args))
 
-local Y = X.New({
-    Title = "Main"
-})
-
-local A = Y.Button({
-    Text = "You have not selected any Dataloss Type",
-    Callback = function()
-        if Type == "Start Dataloss" then
-                    local args = {
-                           [1] = "\0" .. string.rep("B", 4200000) 
-                            }
-
-                            game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("SetTutorialDone"):FireServer(unpack(args))
 end
-                        [2] = "AFS_Is_Dogshit",
-                        [3] = 3
-                    }
-
-                    game:GetService("ReplicatedStorage").Remote.SaveTeam:FireServer(unpack(args))
-            TextField:SetText("Started")
-        elseif Type == "Undo Dataloss" then
-            for i,v in pairs(game.Players.LocalPlayer.PlayerGui.MainGui.Pets.TeamsList.Main.Scroll:GetDescendants()) do
-                if v.Name == "TeamName" and v.Text == "AFS_Is_Dogshit" then
-                    local args = {
-                        [1] = v.Parent.LayoutOrder
-                    }
-
-                    game:GetService("ReplicatedStorage").Remote.DeleteTeam:FireServer(unpack(args))
-                    TextField:SetText("Undone")
-                    break
-                end
-            end
-        end
-    end
-})
-
-local D = Y.Dropdown({
-    Text = "Dataloss Type",
-    Callback = function(Value)
-        getgenv().Type = Value
-    end,
-    Options = {
-        "Start Dataloss",
-        "Undo Dataloss"
-    }
-})
-
-local AE = Y.Button({
-    Text = "Hop Sever",
-    Callback = function()
-        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end
-})
-
-local AE2 = Y.Button({
-    Text = "Kick",
-    Callback = function()
-        game.Players.LocalPlayer:Kick("Vô Lại Đê")
-    end
-})
-
-getgenv().TextField = Y.TextField({
-    Text = "Status",
-    Type = "Default"
-})
-
-while task.wait() do
-    if Type then
-        A:SetText(Type)
-    end
+   end
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+Title = "Fly BY KINZ";
+Text = "By kinznosad#0000 uuuuuuuuuuuuuuu";
+Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 5; 
 end
